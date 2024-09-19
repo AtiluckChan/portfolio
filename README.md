@@ -1,3 +1,8 @@
+# Note
+
+This project is the portfolio showcasing my skill and experience.
+It is still in progress.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
