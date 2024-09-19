@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useRef } from 'react';
+import Navbar from '../src/Components/Navbar';
+import Home from '../src/Components/Home';
+import About from '../src/Components/About';
+import Skills from '../src/Components/Skills'
 
 function App() {
+  const aboutRef = useRef(null);
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to the About section
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar scrollToAbout={scrollToAbout} />
+      <Home/>
+      <About ref={aboutRef} />
+      <Skills/>
     </div>
   );
 }
