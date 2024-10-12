@@ -17,20 +17,20 @@ const WorkExperience = () => {
     ];
 
     return (
-        <div className='workExperience-container'>
-            <h1 className="timeline-title">WORK EXPERIENCE</h1>
-            <div className="workExperience-content">
+        <div className='work-experience-section'>
+            <h1 className="secondary-heading">Work Experience</h1>
+            {/* <div className="work-experience-conatiner"> */}
                 {workComponent.map((item, index) => (
-                    <div key={index} className="workExperience-wrapper">
+                    <div key={index} className="work-experience-conatiner">
                         {/* Left Section */}
-                        <div className="company-details">
+                        <div className="company-card">
                             <img src={item.companyImg} alt={`${item.companyName} logo`} className="company-logo"/>
                             <p className="company-name">{item.companyName}</p>
                             <p className="work-period">{item.Period}</p>
                         </div>
                         
                         {/* Right Section */}
-                        <div className="work-cards">
+                        <div className="work-card-container">
                             {item.Description.map((desc, i) => (
                                 <div key={i} className="work-card">
                                     <h3>{desc.title}</h3>
@@ -40,7 +40,7 @@ const WorkExperience = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            {/* </div> */}
         </div>
     )
 }

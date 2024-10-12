@@ -1,5 +1,4 @@
 import React from 'react'
-import Skills from './Skills'
 import ThaiFlag from '../Assets/Thaiflag.png'
 import EnglishFlag from '../Assets/Englishflag.png'
 
@@ -39,10 +38,9 @@ const About = React.forwardRef((props, ref) => {
     return (
         <section ref={ref} className="about-section">
         <div className="about-container">
-        
-        <div className="timeline-container">
-          <h1 className="timeline-title">Education</h1>
-          <div className="timeline">
+        <div className="education-section">
+          <h1 className="secondary-heading">Education</h1>
+          <div className="education-timeline">
             {educationTimeline.map((item, index) => (
               <div key={index} className="timeline-item">
                 <div className="timeline-year">{item.year}</div>
@@ -59,16 +57,16 @@ const About = React.forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div className='all-language-container'>
-            <h1 className="timeline-title">Languages</h1>
+        <div className='language-section'>
+            <h1 className="secondary-heading">Languages</h1>
             {language.map((item, index) => (
                 <div className='language-container'>
-                    <div className='language-name-container'>
-                    <img src={item.image} className='language-flag-image'/>
-                    <div className='language-proficiency-container'>
-                    <h3 className="language">{item.language}</h3>
-                    <p className="language-proficiency">{item.proficiency}</p>
-                    </div>
+                    <div className='one-language-container'>
+                      <img src={item.image} className='language-flag-image'/>
+                      <div className='language-proficiency-container'>
+                      <h3>{item.language}</h3>
+                      <p className="language-proficiency">{item.proficiency}</p>
+                      </div>
                     </div>
                 </div>
             ))}

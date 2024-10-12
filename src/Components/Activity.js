@@ -37,13 +37,13 @@ const Activity = () => {
   return (
     <div className='activity-section'>
       <h1>ACTIVITIES</h1>
-      <div className='activity-container'>
+      <div className='horizontal-container'>
         {activities.map((activity, index) => (
-          <div className='activity-card' key={index}>
-            <div className='activity-img-frame'>
-              <img className='activity-img' src={activity.imgSrc} alt={activity.altText} />
+          <div className='card' key={index}>
+            <div className='card-img-frame'>
+              <img className='card-img' src={activity.imgSrc} alt={activity.altText} />
             </div>
-            <div className='activity-text'>
+            <div className='card-text'>
               <h4>{activity.title}</h4>
             </div>
           </div>

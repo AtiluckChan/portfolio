@@ -112,32 +112,32 @@ const Skills = () => {
 
     return (
         <div className="skill-container">
-        <div className='software-container'>
+        <div className='software-section'>
             <h3>TOOLS</h3>
-            <div className='software-icon-container'>
+            <div className='software-container'>
             {softwareSkill.map((item, index) => (
                 <div className='one-software-container'>
                     <img className='logo-img' src={item.image}/>
-                    <p className='software-name'>{item.software}</p>
+                    <p>{item.software}</p>
                 </div>
             ))}
             </div>
         </div>
-        <div className='UXUIskill-container'>
-            <h1 className="timeline-title">USER RESEARCH AND DESIGN</h1>
-            <div className='UXUI-skill-container'>
-                <div className='all-UXUIskill-container'>
+        <div className='uxui-skill-section'>
+            <h1 className="secondary-heading">User Research & Design</h1>
+            <div className='uxui-skill-container'>
+                <div className='all-uxui-skill-container'>
                 {UXUISkills.map((item, index) => (
-                    <div className='one-UXUIskill-container'>
+                    <div>
                         <li>{item.Skill}</li>
                     </div>
                 ))}
                 </div>
-                <img className='UXUI-Image' src={UXUISkill}/>
+                <img className='uxui-right-image' src={UXUISkill}/>
             </div>
         </div>
-        <div className='programming-container'>
-            <div className='program-icon-container'>
+        <div className='programming-section'>
+            <div className='program-container'>
             {programmingSkills.map((item, index) => (
                 <div className='one-program-container'>
                     <img className='logo-img' src={item.image}/>

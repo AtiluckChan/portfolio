@@ -29,15 +29,15 @@ const Certificate = () => {
       ];
     
       return (
-        <div className='activity-section'>
-          <h1>CERTIFICATES</h1>
-          <div className='activity-container'>
+        <div className='certificate-section'>
+          <h1>Certificates</h1>
+          <div className='horizontal-container'>
             {certificates.map((certificates, index) => (
-              <div className='activity-card' key={index}>
-                <div className='activity-img-frame'>
-                  <img className='activity-img' src={certificates.imgSrc} alt={certificates.altText} />
+              <div className='card' key={index}>
+                <div className='card-img-frame'>
+                  <img className='card-img' src={certificates.imgSrc} alt={certificates.altText} />
                 </div>
-                <div className='activity-text'>
+                <div className='card-text'>
                   <h4>{certificates.title}</h4>
                 </div>
               </div>
