@@ -11,31 +11,33 @@ import Certificate from './Components/Certificate';
 import Footer from './Components/Footer';
 
 function App() {
-  const aboutRef = useRef(null);  // About section ref
-  const activityRef = useRef(null);  // Activity section ref
+  const sectionRefs = useRef({
+    home: null,
+    about: null,
+    skills: null,
+    workExperience: null,
+    project: null,
+    activity: null,
+    certificate: null,
+  });
 
-  const scrollToAbout = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the About section
-    }
-  };
-
-  const scrollToActivity = () => {
-    if (activityRef.current) {
-      activityRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the Activity section
+  const scrollToSection = (section) => {
+    const ref = sectionRefs.current[section];
+    if (ref) {
+      ref.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
     <div className="App">
-      <Navbar scrollToAbout={scrollToAbout} scrollToActivity={scrollToActivity} />
-      <Home />
-      <About ref={aboutRef} />
-      <Skills />
-      <WorkExperience />
-      <Project />
-      <Activity ref2={activityRef} />
-      <Certificate />
+      <Navbar scrollToSection={scrollToSection} />
+      <Home ref={(el) => (sectionRefs.current.home = el)} />
+      <About ref={(el) => (sectionRefs.current.about = el)} />
+      <Skills ref={(el) => (sectionRefs.current.skills = el)} />
+      <WorkExperience ref={(el) => (sectionRefs.current.workExperience = el)} />
+      <Project ref={(el) => (sectionRefs.current.project = el)} />
+      <Activity ref={(el) => (sectionRefs.current.activity = el)} />
+      <Certificate ref={(el) => (sectionRefs.current.certificate = el)} />
       <Footer />
     </div>
   );

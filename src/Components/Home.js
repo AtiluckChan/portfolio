@@ -3,7 +3,7 @@ import CircleBackground from "../Assets/CircleBackground.png"
 import Sparkle from "../Assets/Sparkle.png"
 import Avatar from "../Assets/Avatar.png"
 
-const Home = () => {
+const Home = React.forwardRef((props, ref) => {
   const handleEmailClick = () => {
     const email = 'atiluck.chan@gmail.com';
     const mailtoLink = `mailto:${email}`;
@@ -11,15 +11,16 @@ const Home = () => {
   };
 
   return (
+    <section ref={ref}>
     <div>
       <div className="home-banner-container">
         <div className="home-left-bg-banner-container">
-          <img src={CircleBackground} alt="" />
+          <img src={CircleBackground} alt="circle background" />
           {/* <img className="home-left-benner-sparkle1-container" src={Sparkle} alt="" /> */}
-          <img className="home-left-bg-banner-sparkle-container" src={Sparkle} alt="" />
+          <img className="home-left-bg-banner-sparkle-container" src={Sparkle} alt="sparkle background" />
         </div>
         <div className="home-left-banner-image-section">
-          <img src={Avatar} alt="" />
+          <img src={Avatar} alt="avatar" />
         </div>
           <div className="home-text-container">
           <div>
@@ -41,7 +42,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </section>
   );
-};
+});
 
 export default Home

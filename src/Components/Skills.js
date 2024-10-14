@@ -16,7 +16,7 @@ import REACT from '../Assets/Programming/REACT.png'
 import SQL from '../Assets/Programming/SQL.png'
 import UXUISkill from '../Assets/UXUISkill.png'
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
     const softwareSkill = [
         {
           software: "FIGMA",
@@ -111,13 +111,14 @@ const Skills = () => {
         ];
 
     return (
+        <section ref={ref}>
         <div className="skill-container">
         <div className='software-section'>
             <h3>TOOLS</h3>
             <div className='software-container'>
             {softwareSkill.map((item, index) => (
                 <div className='one-software-container'>
-                    <img className='logo-img' src={item.image}/>
+                    <img alt={item.software + ' logo'} className='logo-img' src={item.image}/>
                     <p>{item.software}</p>
                 </div>
             ))}
@@ -133,21 +134,22 @@ const Skills = () => {
                     </div>
                 ))}
                 </div>
-                <img className='uxui-right-image' src={UXUISkill}/>
+                <img alt='UXUI research' className='uxui-right-image' src={UXUISkill}/>
             </div>
         </div>
         <div className='programming-section'>
             <div className='program-container'>
             {programmingSkills.map((item, index) => (
                 <div className='one-program-container'>
-                    <img className='logo-img' src={item.image}/>
+                    <img alt={item.programming + ' logo'} className='logo-img' src={item.image}/>
                     <p className='software-name'>{item.programming}</p>
                 </div>
             ))}
             </div>
         </div>
         </div>
+        </section>
   )
-}
+})
 
 export default Skills

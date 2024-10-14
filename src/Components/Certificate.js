@@ -4,7 +4,7 @@ import BOTNOI from '../Assets/Activity&Certificate/Botnoi.png'
 import EFSET from '../Assets/Activity&Certificate/EFSET.png'
 import TUSTARTUP from '../Assets/Activity&Certificate/TUStartupCer.png'
 
-const Certificate = () => {
+const Certificate = React.forwardRef((props, ref) => {
     const certificates = [
         {
             imgSrc: GDSC,
@@ -29,6 +29,7 @@ const Certificate = () => {
       ];
     
       return (
+        <section ref={ref}>
         <div className='certificate-section'>
           <h1>Certificates</h1>
           <div className='horizontal-container'>
@@ -44,7 +45,8 @@ const Certificate = () => {
             ))}
           </div>
         </div>
+        </section>
       );
-}
+})
 
 export default Certificate

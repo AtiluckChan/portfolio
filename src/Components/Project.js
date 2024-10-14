@@ -3,8 +3,9 @@ import InkCraft from '../Assets/Project/Inkcraft.png'
 import SharedParty from '../Assets/Project/SharedParty.png'
 import CRM from '../Assets/Project/CRM.png'
 
-const Project = () => {
+const Project = React.forwardRef((props, ref) => {
   return (
+    <section ref={ref}>
     <div className='project-section'>
         <div className='project-container'>
         {/* <h1 className='timeline-title'>PROJECTS</h1> */}
@@ -64,7 +65,8 @@ const Project = () => {
             </div>
         </div>
     </div>
+    </section>
   )
-}
+})
 
 export default Project

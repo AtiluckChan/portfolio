@@ -5,7 +5,7 @@ import PRLeadership from '../Assets/Activity&Certificate/Leadership.png'
 import TUStartup from '../Assets/Activity&Certificate/TUStartup.png'
 import KeioUniversity from '../Assets/Activity&Certificate/KeioUniversity.png'
 
-const Activity = () => {
+const Activity = React.forwardRef((props, ref) => {
   const activities = [
     {
       imgSrc: Figma101,
@@ -35,8 +35,9 @@ const Activity = () => {
   ];
 
   return (
+    <section ref={ref}>
     <div className='activity-section'>
-      <h1>ACTIVITIES</h1>
+      <h1>Activities</h1>
       <div className='horizontal-container'>
         {activities.map((activity, index) => (
           <div className='card' key={index}>
@@ -50,7 +51,8 @@ const Activity = () => {
         ))}
       </div>
     </div>
+    </section>
   );
-};
+});
 
 export default Activity;

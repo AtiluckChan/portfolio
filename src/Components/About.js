@@ -62,7 +62,7 @@ const About = React.forwardRef((props, ref) => {
             {language.map((item, index) => (
                 <div className='language-container'>
                     <div className='one-language-container'>
-                      <img src={item.image} className='language-flag-image'/>
+                      <img alt='flag' src={item.image} className='language-flag-image'/>
                       <div className='language-proficiency-container'>
                       <h3>{item.language}</h3>
                       <p className="language-proficiency">{item.proficiency}</p>

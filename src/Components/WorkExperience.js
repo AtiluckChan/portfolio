@@ -1,7 +1,7 @@
 import React from 'react'
 import BotnoiLogo from '../Assets/BotnoiLogo.avif'
 
-const WorkExperience = () => {
+const WorkExperience = React.forwardRef((props, ref) => {
     const workComponent = [
         {
           companyImg: BotnoiLogo,
@@ -17,6 +17,7 @@ const WorkExperience = () => {
     ];
 
     return (
+        <section ref={ref}>
         <div className='work-experience-section'>
             <h1 className="secondary-heading">Work Experience</h1>
             {/* <div className="work-experience-conatiner"> */}
@@ -42,7 +43,8 @@ const WorkExperience = () => {
                 ))}
             {/* </div> */}
         </div>
+        </section>
     )
-}
+})
 
 export default WorkExperience;
