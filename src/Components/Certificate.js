@@ -34,7 +34,7 @@ const Certificate = React.forwardRef((props, ref) => {
           <h1>Certificates</h1>
           <div className='horizontal-container'>
             {certificates.map((certificates, index) => (
-              <div className='card' key={index}>
+              <div className='card1' key={index}>
                 <div className='card-img-frame'>
                   <img className='card-img' src={certificates.imgSrc} alt={certificates.altText} />
                 </div>

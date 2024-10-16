@@ -21,10 +21,17 @@ function App() {
     certificate: null,
   });
 
+  const navbarHeight = 80;
+
   const scrollToSection = (section) => {
     const ref = sectionRefs.current[section];
     if (ref) {
-      ref.scrollIntoView({ behavior: 'smooth' });
+      const topPosition = ref.offsetTop;
+
+      window.scrollTo({
+        top: topPosition - navbarHeight,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -44,4 +51,3 @@ function App() {
 }
 
 export default App;
-

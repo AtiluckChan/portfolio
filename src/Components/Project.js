@@ -43,8 +43,8 @@ const Project = React.forwardRef((props, ref) => {
                     </div>
                 </div>
             </div>
-            <div className='project-img-frame'>
-            <img src={SharedParty} alt='inkcraft project'/>
+            <div className='project-left-img-frame '>
+            <img src={SharedParty} alt='SharedParty project'/>
             </div>
         </div>
         </div>

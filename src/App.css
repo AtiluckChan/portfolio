@@ -139,37 +139,43 @@ nav {
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
 }
+
 .home-left-bg-banner-container {
   position: absolute;
   top: 80px;
   left: 0px;
   z-index: -2;
-  max-width: 600px;
+  max-width: 50%; /* Change from px to % */
+  width: 50vw;    /* Adjust width based on viewport */
 }
-/* .home-left-benner-sparkle1-container {
-  position: absolute;
-  top: -300px;
-  z-index: -2;
-  max-width: 180px;
-} */
+
 .home-left-bg-banner-sparkle-container {
   position: absolute;
   top: 0px;
-  left: 500px;
+  left: 40vw;     /* Adjust position based on viewport width */
   z-index: -2;
-  max-width: 100px;
+  max-width: 10%; /* Make sure sparkle scales based on screen width */
+  width: 10vw;
 }
+
 .home-left-banner-image-section {
-  max-width: 650px;
+  width: 50vw;
   flex: 1;
   padding-left: 2rem;
 }
+
+.home-left-banner-image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
 .home-text-container {
   flex: 1;
-  padding-left: 5rem;
+  padding-left: 3rem;
   padding-right: 2rem;
-  padding-block: 3rem;
+  padding-block: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -184,25 +190,32 @@ nav {
 /* About */
 .about-container {
   background-color: #f9f9f9;
-  width: 100%;
   height: fit-content;
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 3rem 3rem;
+  padding-block: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 .education-section {
-  padding-left: 2rem;
-  padding-right: 5rem;
+  flex: 1 1 10rem; /* Flex grow, shrink, and base width */
+  /* padding-left: 2rem; */
+  /* padding-right: 5rem; */
 }
 .education-timeline {
   /* padding-left: 4px; */
+  width: 100%;
   position: relative;
 }
 .timeline-item {
+  min-width: 5rem;
   display: flex;
   margin-bottom: 2rem;
+  /* flex-wrap: wrap; */
 }
 .timeline-year {
   font-weight: bold;
@@ -216,6 +229,7 @@ nav {
   padding: 0.7rem 2rem;
   border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 20rem; /* Flex grow, shrink, and base width */
 }
 .timeline-degree {
   font-size: 1.2rem;
@@ -230,11 +244,13 @@ nav {
 }
 
 .language-section {
+  margin-top: 2rem;
   height: fit-content;
   background-color: #cddee0;
   border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  width:fit-content ;
 }
 .language-container {
   align-items: center;
@@ -275,7 +291,7 @@ nav {
 .software-container {
   display: flex;
   flex-wrap: wrap; /* Allow the items to wrap when the space is not enough */
-  justify-content: space-between; /* Center the wrapped elements */
+  /* justify-content: space-between; */
   gap: 1rem; /* Space between the items */
   margin-top: 2rem;
 }
@@ -286,7 +302,6 @@ nav {
   align-items: center;
   width: 4rem;
   margin: 0.5rem;
-  flex: 1 1 4rem; /* Allow the item to grow and shrink based on available space */
 }
 .logo-img {
   width: 100%; /* Make the image responsive to the parent width */
@@ -309,13 +324,11 @@ nav {
   padding-inline: 3rem;
 } */
 .program-container {
-  flex-direction: row;
-  width: 100%;
   display: flex;
+  flex-wrap: wrap; /* This allows the boxes to wrap to a new line when necessary */
   gap: 2rem;
-  height: fit-content;
-  width: fit-content;
-  padding: 1rem 5rem;
+  justify-content: center; /* Center the items horizontally */
+  padding: 3rem;
 }
 .one-program-container {
   display: flex;
@@ -325,7 +338,7 @@ nav {
   width: 10rem;
   height: 10rem;
   border-radius: 10px;
-  flex: 1 1 4rem; /* Allow the item to grow and shrink based on available space */
+
   background-color: white;
 }
 .uxui-skill-section {
@@ -354,8 +367,8 @@ nav {
 }
 .uxui-right-image {
   position: relative;
-  top: 0px;
-  right: 2rem;
+  /* top: 0px;
+  right: 2rem; */
   width: 40%;
 }
 
@@ -453,14 +466,25 @@ nav {
   background-color: #cddee0;
 }
 .project-two {
-  padding-inline: 8rem 5rem;
-  gap: 3rem;
+  /* padding-inline: 8rem 5rem; */
+  padding-left: 8rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
+}
+.project-img-frame {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 .project-two img {
+  /* height: 100%;
+  width: 50%; */
+  object-fit: cover;
   display: flex;
   justify-content: end;
 }
@@ -468,14 +492,7 @@ nav {
   display: flex;
   gap: 1rem;
 }
-.project-img-frame {
-  width: 50%;
-  height: 28rem;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
+
 .project-left-img-frame {
   width: 50%;
   height: 28rem;
@@ -499,7 +516,7 @@ nav {
   padding-bottom: 1.5rem;
 }
 .project-text-container {
-  width: 60%;
+  width: 50%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -535,6 +552,7 @@ nav {
   background-color: #cddee0;
 }
 .horizontal-container {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -542,7 +560,18 @@ nav {
 }
 .card {
   background-color: white;
-  width: 30%;
+  width: 13rem;
+  height: 18rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card1 {
+  background-color: white;
+  width: 15rem;
   height: 18rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -629,20 +658,278 @@ nav {
 .footer-bottom p {
   font-size: 0.9rem;
 } */
+ /* When the screen is smaller than 768px (tablet and smaller), adjust the layout */
 
-@media (max-width: 1000px) {
-  .nav-logo-container {
-    max-width: 140px;
+@media (max-width: 768px) {
+  .home-banner-container {
+    height:fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .navbar-links-container a {
-    margin-right: 1rem;
-    font-size: 1rem;
+  
+  .home-left-bg-banner-container {
+    display: none;
   }
-  .primary-button {
-    font-size: 1rem;
-    width: fit-content;
+  
+  .home-left-bg-banner-sparkle-container {
+    display: none;
   }
-  .home-bannerImage-container {
-    max-width: 600px;
+  
+  .home-left-banner-image-section {
+    width: 100%;
+    margin-top: -150px;
   }
+  
+  .home-left-banner-image-section img {
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    margin-left: -10px;
+  }
+  .home-text-container {
+    width: 100%;
+    position: relative;
+    flex: 2;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  /* About */
+  .about-container {
+    gap: 0rem;
+  }
+  .education-section {
+    flex: 1 1 10rem; /* Flex grow, shrink, and base width */
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .education-timeline {
+    /* padding-left: 4px; */
+    flex: 1 1 10rem;
+  }
+  .timeline-item {
+    flex: 1 1 10rem;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap
+  }
+  .timeline-content {
+    min-width: 200px;
+  }
+  .timeline-year {
+    font-weight: bold;
+    /* margin-right: 2rem; */
+    color: #223e4a;
+    font-size: 1.2rem;
+    min-width: 150px;
+  }
+  .timeline-year {
+    margin-bottom: 20px;
+  }
+  .language-section {
+    margin-inline: 2rem;
+    flex: 1 1 10rem;
+    height: fit-content;
+    background-color: #cddee0;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width:fit-content ;
+  }
+  .language-container {
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.7rem 2rem;
+    margin: 2rem 0rem;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .one-language-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.5rem;
+  }
+  .language-flag-image {
+    max-height: 2rem;
+  }
+  .language-proficiency-container {
+    padding-left: 1rem;
+  }
+  .software-section {
+    position: relative;
+    padding-inline: 3rem;
+    align-items: center;
+  }
+
+  .software-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/* Center the items, or you can use flex-start */
+    gap: 1px; /* Set a fixed gap to prevent stretching */
+    margin-top: 2rem;
+  }
+
+  .one-software-container {
+    width: 4rem; /* Set width to 25% minus the gap */
+    margin-bottom: 1rem; /* Ensure the bottom margin creates even spacing between lines */
+  }
+  .logo-img {
+    width: 100%;
+    max-width: 3rem;
+  }
+  .uxui-skill-section {
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 0rem;
+    display: flex;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+  .uxui-skill-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .all-uxui-skill-container {
+    position: relative;
+    display: flex;
+    align-items: start;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: large;
+  }
+  .all-uxui-skill-container li {
+    background-color: #cddee0;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    list-style-type: none;
+  }
+  .uxui-right-image {
+    position: relative;
+    align-items: center;
+    width: 100%;
+  }
+
+  .work-experience-section {
+    width: 100%;
+    padding-inline: 4rem;
+    padding-block: 3rem;
+    background-color: #f9f9f9;
+  }
+
+  .work-experience-conatiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .program-container {
+    padding-inline: 4rem;
+    gap: 3rem;
+  }
+  
+  /* Left Section: Work Cards */
+  .company-card {
+    flex-basis: 100%;
+    padding: 20px 0px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .company-logo {
+    display: none;
+  }
+  /* Right Section: Work Cards */
+  .work-card-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-basis: 100%;
+  }
+  .work-card {
+    width:100%;
+  }
+  /* Project */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding-block: 5rem 0rem; */
+  background-color: #f9f9f9;
+}
+.project-one {
+  flex-wrap: wrap;
+  gap: 0rem;
+  padding-block: 3rem;
+  padding-inline: 4rem;
+}
+.project-two {
+  padding-inline: 4rem;
+  padding-block: 3rem 0rem;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.project-two img {
+  object-fit: cover;
+  height:fit-content;
+  display: flex;
+  justify-content: end;
+}
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+.project-img-frame {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0rem;
+}
+.project-left-img-frame {
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0rem;
+}
+.project-left-img-frame img {
+  width: 100%;
+}
+.project-name {
+  font-size: 2rem;
+}
+.project-description{
+  word-wrap: break-word;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+.project-text-container {
+  width: 100%;
+}
+.project-text-container-inner{
+  padding-right: 0rem;
+}
 }
