@@ -36,14 +36,14 @@ const Project = React.forwardRef((props, ref) => {
                     <h3 className='project-name'>Shared Party</h3>
                     <p className='project-description'>Discover the smarter way to save and connect! Our app helps you split bills, find local sales, and connect with people who share your interests. Save more while building a community, all with a seamless, user-friendly design.
                     </p>
-                    <div className='button-container'>
+                    <div>
                         <button type='button' className="secondary-button">
                         <a target="_blank" href='https://www.figma.com/proto/5KL0jy1CO26d85pIm2wyjW/SharedParty---Edit?type=design&node-id=31-146&t=OoGPbBk5ugfMss0W-1&scaling=scale-down&page-id=0%3A1&mode=design'>View Prototype</a>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className='project-left-img-frame '>
+            <div className='project-img-frame'>
             <img src={SharedParty} alt='SharedParty project'/>
             </div>
         </div>

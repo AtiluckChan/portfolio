@@ -86,7 +86,7 @@ img {
   margin: 0rem auto;
 }
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   max-width: 100%;
   overflow-x: hidden;
   background-color: #9bc4c6;
@@ -95,40 +95,50 @@ p {
   line-height: 1.7rem;
 }
 
-/* navigation bar */
+/* Navbar */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin: 1rem 3rem; */
-  min-height: 80px;
+  min-height: 60px;
   position: fixed;  
   top: 0;          
   left: 0;       
   width: 100%;
   background-color: #9bc4c6;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
   z-index: 1000;
 }
-.nav-logo-container {
-  max-width: 200px;
-  padding-left: 3rem;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
+
+.nav-logo-container img {
+  height: 50px;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 15px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color:#ffffff;
+}
+
 .navbar-menu-container {
   display: none;
-}
-.navbar-links-container button {
-  margin-right: 3rem;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.navbar-menu-container svg {
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -139,7 +149,7 @@ nav {
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .home-left-bg-banner-container {
@@ -147,22 +157,22 @@ nav {
   top: 80px;
   left: 0px;
   z-index: -2;
-  max-width: 50%; /* Change from px to % */
-  width: 50vw;    /* Adjust width based on viewport */
+  max-width: 50%;
+  width: 50vw;
 }
 
 .home-left-bg-banner-sparkle-container {
   position: absolute;
   top: 0px;
-  left: 40vw;     /* Adjust position based on viewport width */
+  left: 40vw;
   z-index: -2;
-  max-width: 10%; /* Make sure sparkle scales based on screen width */
+  max-width: 10%;
   width: 10vw;
 }
 
 .home-left-banner-image-section {
   width: 50vw;
-  flex: 1;
+  /* flex: 1; */
   padding-left: 2rem;
 }
 
@@ -181,11 +191,6 @@ nav {
   justify-content: start;
   align-items: flex-start;
 }
-/* .secondary-button svg {
-  margin-left: 0.75rem;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-} */
 
 /* About */
 .about-container {
@@ -202,12 +207,9 @@ nav {
   gap: 3rem;
 }
 .education-section {
-  flex: 1 1 10rem; /* Flex grow, shrink, and base width */
-  /* padding-left: 2rem; */
-  /* padding-right: 5rem; */
+  flex: 1 1 10rem;
 }
 .education-timeline {
-  /* padding-left: 4px; */
   width: 100%;
   position: relative;
 }
@@ -215,11 +217,9 @@ nav {
   min-width: 5rem;
   display: flex;
   margin-bottom: 2rem;
-  /* flex-wrap: wrap; */
 }
 .timeline-year {
   font-weight: bold;
-  /* margin-right: 2rem; */
   color: #223e4a;
   font-size: 1.2rem;
   min-width: 150px;
@@ -229,7 +229,7 @@ nav {
   padding: 0.7rem 2rem;
   border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 20rem; /* Flex grow, shrink, and base width */
+  flex: 1 1 20rem;
 }
 .timeline-degree {
   font-size: 1.2rem;
@@ -277,7 +277,7 @@ nav {
 .skill-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   width: 100%;
   gap: 3rem;
   padding-block: 3rem;
@@ -290,9 +290,8 @@ nav {
 }
 .software-container {
   display: flex;
-  flex-wrap: wrap; /* Allow the items to wrap when the space is not enough */
-  /* justify-content: space-between; */
-  gap: 1rem; /* Space between the items */
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 2rem;
 }
 .one-software-container {
@@ -304,31 +303,24 @@ nav {
   margin: 0.5rem;
 }
 .logo-img {
-  width: 100%; /* Make the image responsive to the parent width */
-  max-width: 4rem; /* Set a max width to ensure it doesn't become too large */
+  width: 100%;
+  max-width: 4rem;
   border-radius: 20px;
   margin-bottom: 1rem;
 }
 .one-software-container p {
   text-align: center;
   font-size: small;
-  word-wrap: break-word; /* Break words if they’re too long */
+  word-wrap: break-word;
   line-height: 1.2rem;
 }
-
-/* .programming-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding-inline: 3rem;
-} */
 .program-container {
-  display: flex;
-  flex-wrap: wrap; /* This allows the boxes to wrap to a new line when necessary */
+  justify-content: center;
+  padding-inline: 2rem;
   gap: 2rem;
-  justify-content: center; /* Center the items horizontally */
-  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .one-program-container {
   display: flex;
@@ -338,7 +330,6 @@ nav {
   width: 10rem;
   height: 10rem;
   border-radius: 10px;
-
   background-color: white;
 }
 .uxui-skill-section {
@@ -367,8 +358,6 @@ nav {
 }
 .uxui-right-image {
   position: relative;
-  /* top: 0px;
-  right: 2rem; */
   width: 40%;
 }
 
@@ -380,21 +369,11 @@ nav {
   background-color: #f9f9f9;
 }
 .work-experience-conatiner {
-  display: flex;
   justify-content: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* Wrapper for each work experience section */
-/* .workExperience-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border-radius: 8px;
-  width: 100%;
-} */
 
 /* Left Section: Work Cards */
 .company-card {
@@ -409,13 +388,11 @@ nav {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  /* margin-bottom: 10px; */
 }
 .company-name {
   font-size: 18px;
   color: #00bbff;
   font-weight: bold;
-  /* margin-bottom: 5px; */
 }
 .work-period {
   font-size: 14px;
@@ -454,7 +431,6 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* padding-block: 5rem 0rem; */
   background-color: #f9f9f9;
 }
 .project-one {
@@ -466,7 +442,6 @@ nav {
   background-color: #cddee0;
 }
 .project-two {
-  /* padding-inline: 8rem 5rem; */
   padding-left: 8rem;
   display: flex;
   flex-direction: row;
@@ -482,15 +457,9 @@ nav {
   justify-content: center;
 }
 .project-two img {
-  /* height: 100%;
-  width: 50%; */
   object-fit: cover;
   display: flex;
   justify-content: end;
-}
-.button-container {
-  display: flex;
-  gap: 1rem;
 }
 
 .project-left-img-frame {
@@ -537,16 +506,17 @@ nav {
 .activity-section {
   display: flex;
   flex-direction: column;
-  padding-inline: 3rem;
+  padding-inline: 2rem;
   padding-block: 3rem;
   gap: 3rem;
+  justify-content: space-between;
   align-items: center;
   background-color: #f9f9f9;
 }
 .certificate-section {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 2rem;
   gap: 3rem;
   align-items: center;
   background-color: #cddee0;
@@ -623,48 +593,21 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
-/*.footer-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-.footer-section ul li {
-  margin: 0.5rem 0;
-}
- .footer-section ul li a {
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.footer-section ul li a:hover {
-  color: #1e90ff; 
-} 
- .social-icons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-.social-icons a img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
-}
-.social-icons a img:hover {
-  transform: scale(1.1);
-}
-.footer-bottom {
-  margin-top: 2rem;
-  border-top: 1px solid #444;
-  padding-top: 1rem;
-}
-.footer-bottom p {
-  font-size: 0.9rem;
-} */
- /* When the screen is smaller than 768px (tablet and smaller), adjust the layout */
 
 @media (max-width: 768px) {
+  /* Navbar */
+  .navbar-links-container {
+    display: none;
+  }
+
+  .navbar-menu-container {
+    display: block;
+  }
+
+  /* Home */
   .home-banner-container {
+    padding-inline: 4rem;
     height:fit-content;
-    overflow: hidden;
-    display: flex;
     flex-direction: column-reverse;
   }
   
@@ -678,26 +621,22 @@ nav {
   
   .home-left-banner-image-section {
     width: 100%;
+    height: 75vh;
     margin-top: -150px;
+    padding-left: 0rem;
   }
   
   .home-left-banner-image-section img {
     width: 100%;
-    overflow: hidden;
-    height: 450px;
     object-fit: cover;
     object-position: 0% 0%;
-    margin-left: -10px;
   }
   .home-text-container {
     width: 100%;
     position: relative;
-    flex: 2;
     padding-block: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
 
   /* About */
@@ -705,17 +644,13 @@ nav {
     gap: 0rem;
   }
   .education-section {
-    flex: 1 1 10rem; /* Flex grow, shrink, and base width */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-inline: 2rem;
   }
   .education-timeline {
-    /* padding-left: 4px; */
     flex: 1 1 10rem;
   }
   .timeline-item {
     flex: 1 1 10rem;
-    display: flex;
     margin-bottom: 2rem;
     flex-wrap: wrap
   }
@@ -723,45 +658,13 @@ nav {
     min-width: 200px;
   }
   .timeline-year {
-    font-weight: bold;
-    /* margin-right: 2rem; */
-    color: #223e4a;
-    font-size: 1.2rem;
-    min-width: 150px;
-  }
-  .timeline-year {
     margin-bottom: 20px;
   }
   .language-section {
     margin-inline: 2rem;
     flex: 1 1 10rem;
-    height: fit-content;
-    background-color: #cddee0;
-    border-radius: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    width:fit-content ;
   }
-  .language-container {
-    align-items: center;
-    background-color: #ffffff;
-    padding: 0.7rem 2rem;
-    margin: 2rem 0rem;
-    border-radius: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .one-language-container {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0.5rem;
-  }
-  .language-flag-image {
-    max-height: 2rem;
-  }
-  .language-proficiency-container {
-    padding-left: 1rem;
-  }
+
   .software-section {
     position: relative;
     padding-inline: 3rem;
@@ -769,46 +672,28 @@ nav {
   }
 
   .software-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;/* Center the items, or you can use flex-start */
-    gap: 1px; /* Set a fixed gap to prevent stretching */
-    margin-top: 2rem;
+    justify-content: center;
   }
 
   .one-software-container {
-    width: 4rem; /* Set width to 25% minus the gap */
-    margin-bottom: 1rem; /* Ensure the bottom margin creates even spacing between lines */
+    width: 4rem;
+    margin-bottom: 1rem;
   }
   .logo-img {
-    width: 100%;
     max-width: 3rem;
   }
   .uxui-skill-section {
-    background-color: #f9f9f9;
     flex-wrap: wrap;
-    position: relative;
     gap: 0rem;
-    display: flex;
-    align-items: center;
     padding: 3rem 4rem;
   }
   .uxui-skill-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
   }
   .all-uxui-skill-container {
-    position: relative;
-    display: flex;
-    align-items: start;
     flex-direction:row;
     flex-wrap: wrap;
-    gap: 1rem;
-    font-size: large;
   }
   .all-uxui-skill-container li {
     background-color: #cddee0;
@@ -817,39 +702,37 @@ nav {
     list-style-type: none;
   }
   .uxui-right-image {
-    position: relative;
     align-items: center;
     width: 100%;
   }
 
   .work-experience-section {
-    width: 100%;
     padding-inline: 4rem;
-    padding-block: 3rem;
-    background-color: #f9f9f9;
   }
 
   .work-experience-conatiner {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .program-container {
     padding-inline: 4rem;
     gap: 3rem;
+  }
+  .one-program-container {
+    height: 7rem;
   }
   
   /* Left Section: Work Cards */
   .company-card {
     flex-basis: 100%;
     padding: 20px 0px;
-    border-radius: 12px;
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+  }
+  .company-name {
+    color:#223e4a;
+  }
+  .work-period {
+    color: #223e4a;
   }
   .company-logo {
     display: none;
@@ -857,79 +740,59 @@ nav {
   /* Right Section: Work Cards */
   .work-card-container {
     flex-wrap: wrap;
-    gap: 20px;
     flex-basis: 100%;
   }
   .work-card {
     width:100%;
   }
   /* Project */
-.project-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  /* padding-block: 5rem 0rem; */
-  background-color: #f9f9f9;
-}
-.project-one {
-  flex-wrap: wrap;
-  gap: 0rem;
-  padding-block: 3rem;
-  padding-inline: 4rem;
-}
-.project-two {
-  padding-inline: 4rem;
-  padding-block: 3rem 0rem;
-  gap: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  flex-wrap: wrap;
-}
-.project-two img {
-  object-fit: cover;
-  height:fit-content;
-  display: flex;
-  justify-content: end;
-}
-.button-container {
-  display: flex;
-  gap: 1rem;
-}
-.project-img-frame {
-  width: 100%;
-  height: 20rem;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  padding-left: 0rem;
-}
-.project-left-img-frame {
-  width: 100%;
-  height:fit-content;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  padding-left: 0rem;
-}
-.project-left-img-frame img {
-  width: 100%;
-}
-.project-name {
-  font-size: 2rem;
-}
-.project-description{
-  word-wrap: break-word;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  width: 100%;
-}
-.project-text-container {
-  width: 100%;
-}
-.project-text-container-inner{
-  padding-right: 0rem;
-}
+  .project-one {
+    flex-wrap: wrap;
+    gap: 0rem;
+    padding: 3rem 4rem;
+  }
+  .project-two {
+    padding-inline: 4rem;
+    padding-block: 3rem 0rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .project-two img {
+    height:fit-content;
+  }
+
+  .project-img-frame {
+    width: 100%;
+    height: 20rem;
+    padding-left: 0rem;
+  }
+  .project-left-img-frame {
+    width: 100%;
+    height:fit-content;
+    padding-left: 0rem;
+  }
+  .project-left-img-frame img {
+    width: 100%;
+  }
+  .project-name {
+    font-size: 2rem;
+  }
+  .project-description{
+    width: 100%;
+  }
+  .project-text-container {
+    width: 100%;
+  }
+  .project-text-container-inner{
+    padding-right: 0rem;
+  }
+  .card {
+    width: 15rem;
+  }
+  .activity-section {
+    padding-inline: 4rem;
+  }
+  .certificate-section {
+    padding: 3rem 4rem;
+  }
 }

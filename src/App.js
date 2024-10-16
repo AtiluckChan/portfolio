@@ -21,7 +21,7 @@ function App() {
     certificate: null,
   });
 
-  const navbarHeight = 80;
+  const navbarHeight = 60;
 
   const scrollToSection = (section) => {
     const ref = sectionRefs.current[section];
