@@ -21,9 +21,9 @@ const Footer = () => {
 
         <div className='footer-section'>
           <h3>Atiluck Chanveeratham</h3>
-          <p>Email: atiluck.chan@gmail.com</p>
-          <p>Phone: +66 95 241 4954</p>
-          <p>Address: Bangkok, Thailand</p>
+          <p id='p-two-text'>Email: atiluck.chan@gmail.com</p>
+          <p id='p-two-text'>Phone: +66 95 241 4954</p>
+          <p id='p-two-text'>Address: Bangkok, Thailand</p>
         </div>
 
         {/* <div className='footer-section'>

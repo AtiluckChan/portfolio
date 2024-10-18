@@ -22,7 +22,7 @@ import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRou
 
 const Navbar = ({ scrollToSection }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 768px)'); // Breakpoint for mobile
+  const isMobile = useMediaQuery('(max-width: 1000px)'); // Breakpoint for mobile
 
   const menuOptions = [
     { text: "Home", icon: <HomeIcon />, section: "home" },

@@ -119,7 +119,7 @@ const Skills = React.forwardRef((props, ref) => {
             {softwareSkill.map((item, index) => (
                 <div className='one-software-container'>
                     <img alt={item.software + ' logo'} className='logo-img' src={item.image}/>
-                    <p>{item.software}</p>
+                    <p id='p-three-text'>{item.software}</p>
                 </div>
             ))}
             </div>
@@ -142,7 +142,7 @@ const Skills = React.forwardRef((props, ref) => {
             {programmingSkills.map((item, index) => (
                 <div className='one-program-container'>
                     <img alt={item.programming + ' logo'} className='logo-img' src={item.image}/>
-                    <p className='software-name'>{item.programming}</p>
+                    <p id='p-three-text'>{item.programming}</p>
                 </div>
             ))}
             </div>

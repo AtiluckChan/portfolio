@@ -13,10 +13,10 @@ const Project = React.forwardRef((props, ref) => {
             <div className='project-left-img-frame'>
                 <img src={InkCraft} alt='inkcraft project'/>
             </div>
-            <div className='project-right-text-container'>
+            <div className='project-text-container'>
                 <div className='project-text-container-inner'>
                     <h1 className='project-name'>inkCraft</h1>
-                    <p className='project-description'>Experience seamless t-shirt printing with our mobile app! 
+                    <p id='project-description'>Experience seamless t-shirt printing with our mobile app! 
                         Browse the product catalog, preview designs, streamline the printing process, and track deliveries all in one place. 
                         Say goodbye to slow responses, miscommunication, and incomplete product details!
                     </p>
@@ -32,9 +32,9 @@ const Project = React.forwardRef((props, ref) => {
         {/* <h1 className='timeline-title'>PROJECTS</h1> */}
         <div className='project-two'>
             <div className='project-text-container'>
-                <div className='project-text-container-inner'>
+                <div className='project-two-text-container-inner'>
                     <h3 className='project-name'>Shared Party</h3>
-                    <p className='project-description'>Discover the smarter way to save and connect! Our app helps you split bills, find local sales, and connect with people who share your interests. Save more while building a community, all with a seamless, user-friendly design.
+                    <p id='project-description'>Discover the smarter way to save and connect! Our app helps you split bills, find local sales, and connect with people who share your interests. Save more while building a community, all with a seamless, user-friendly design.
                     </p>
                     <div>
                         <button type='button' className="secondary-button">
@@ -53,10 +53,10 @@ const Project = React.forwardRef((props, ref) => {
             <div className='project-left-img-frame'>
             <img src={CRM} alt='CRM project'/>
             </div>
-            <div className='project-right-text-container'>
+            <div className='project-text-container'>
                 <div className='project-text-container-inner'>
                     <h1 className='project-name'>CRM System</h1>
-                    <p className='project-description'>Designed and developed a CRM system, handling database management through ER modeling, context diagrams, physical and functional design, UI creation, SQL programming, and database manipulation using the low-code platform Retool.
+                    <p id='project-description'>Designed and developed a CRM system, handling database management through ER modeling, context diagrams, physical and functional design, UI creation, SQL programming, and database manipulation using the low-code platform Retool.
                     </p>
                     <button type='button' className="secondary-button">
                         <a target="_blank" href='https://www.figma.com/proto/fs1ngJmUwkTKXHcIYMeKK5/Portfolio---CRM-UI?type=design&node-id=1-370&t=9MpGdqRdrGAHAlUu-1&scaling=contain&page-id=0%3A1&mode=design'>View Prototype</a>

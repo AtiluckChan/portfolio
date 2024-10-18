@@ -2,6 +2,7 @@ import React from "react"
 import CircleBackground from "../Assets/CircleBackground.png"
 import Sparkle from "../Assets/Sparkle.png"
 import Avatar from "../Assets/Avatar.png"
+import { FaGithub } from 'react-icons/fa';
 
 const Home = React.forwardRef((props, ref) => {
   const handleEmailClick = () => {
@@ -27,7 +28,7 @@ const Home = React.forwardRef((props, ref) => {
             <h1 className="primary-heading">
               Atiluck Chanveeratham
             </h1>
-            <p className="primary-text">
+            <p id="p-one-text">
               A senior Digital Engineering student at SIIT 
             <br/>
               Passionate about UX/UI design and web development, 
@@ -35,9 +36,16 @@ const Home = React.forwardRef((props, ref) => {
               Focused on creating user-friendly interfaces and interactive web applications,
               always eager to learn and take on new challenges.
             </p>
-            <button className="primary-button" onClick={handleEmailClick}>
-              Send Me Email
-            </button>
+            <div className="button-container">
+              <button className="primary-button">
+                <a href="https://github.com/AtiluckChan" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="github-icon" size={25}/>
+                </a>
+              </button>
+              <button className="primary-button" onClick={handleEmailClick}>
+                Send Me Email
+              </button>
+            </div>
           </div>
         </div>
       </div>

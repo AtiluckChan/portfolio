@@ -6,12 +6,12 @@ const WorkExperience = React.forwardRef((props, ref) => {
         {
           companyImg: BotnoiLogo,
           companyName: "Botnoi Co., Ltd.",
-          Period: "July 2024 - Present",
+          Period: "June - August 2024",
           Description: [
             { title: "FIGMA", text: "Redesign company product pricing page following the requirement, applying the design system." },
             { title: "Collaboration", text: "With UX/UI team members to ensure cohesive design implementation." },
             { title: "Usability Testing", text: "With A/B testing and surveys on 10 participants using Maze, Discord, and Google Forms." },
-            { title: "Presented Insights", text: "From usability testing to the team, and presented team progress and achievements." }
+            { title: "Result", text: "Increased user satisfaction for ease of use by 10.26% and boosted preference for the professional package by 80% with improved design." }
           ]
         }
     ];

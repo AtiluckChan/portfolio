@@ -65,7 +65,7 @@ const About = React.forwardRef((props, ref) => {
                       <img alt='flag' src={item.image} className='language-flag-image'/>
                       <div className='language-proficiency-container'>
                       <h3>{item.language}</h3>
-                      <p className="language-proficiency">{item.proficiency}</p>
+                      <p id='p-two-text'>{item.proficiency}</p>
                       </div>
                     </div>
                 </div>
