@@ -37,11 +37,9 @@ const Home = React.forwardRef((props, ref) => {
               always eager to learn and take on new challenges.
             </p>
             <div className="button-container">
-              <button className="primary-button">
-                <a href="https://github.com/AtiluckChan" target="_blank" rel="noopener noreferrer">
+                <a  className="primary-button" href="https://github.com/AtiluckChan" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="github-icon" size={25}/>
                 </a>
-              </button>
               <button className="primary-button" onClick={handleEmailClick}>
                 Send Me Email
               </button>
