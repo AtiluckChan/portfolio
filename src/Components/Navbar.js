@@ -50,7 +50,7 @@ const Navbar = ({ scrollToSection }) => {
           <button onClick={() => scrollToSection('home')} className="link-button">Home</button>
           <button onClick={() => scrollToSection('about')} className="link-button">About</button>
           <button onClick={() => scrollToSection('skills')} className="link-button">Skills</button>
-          <button onClick={() => scrollToSection('workExperience')} className="link-button">Work Experience</button>
+          <button onClick={() => scrollToSection('workExperience')} className="link-button">Work Experiences</button>
           <button onClick={() => scrollToSection('project')} className="link-button">Projects</button>
           <button onClick={() => scrollToSection('activity')} className="link-button">Activities</button>
           <button onClick={() => scrollToSection('certificate')} className="link-button">Certificates</button>

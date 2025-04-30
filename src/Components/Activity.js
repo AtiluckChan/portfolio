@@ -3,12 +3,24 @@ import Figma101 from '../Assets/Activity&Certificate/Figma101.png';
 import PRSinno from '../Assets/Activity&Certificate/Sinno Club Member Public Relations.png';
 import PRLeadership from '../Assets/Activity&Certificate/Leadership.png';
 import TUStartup from '../Assets/Activity&Certificate/TUStartup.png';
-import KeioUniversity from '../Assets/Activity&Certificate/KeioUniversity.png';
+import KeioUniversity from '../Assets/Activity&Certificate/KeioUniversity.jpg';
 
 const Activity = React.forwardRef((props, ref) => {
   const [clickedCard, setClickedCard] = useState(null);
 
   const activities = [
+    {
+      imgSrc: TUStartup,
+      altText: 'TU Start-up',
+      title: 'Thammasat Startup Contest',
+      description: 'Advanced to the Top 12 Finalist Round in the Thammasat Startup Contest 2024.',
+    },
+    {
+      imgSrc: KeioUniversity,
+      altText: 'Google Developer Student Club',
+      title: 'International Study Trip at Keio University',
+      description: 'Joined a self-driving tech workshop, programmed in C to simulate car paths and obstacle detection.',
+    },
     {
       imgSrc: Figma101,
       altText: 'Google Developer Student Club',
@@ -26,18 +38,6 @@ const Activity = React.forwardRef((props, ref) => {
       altText: 'PR SIIT Leadership Camp',
       title: 'SIIT Leadership Camp 2023 Public Relations',
       description: 'Created public relations media for SIIT Leadership Camp 2023, including Instagram posts, posters, and T-shirts.',
-    },
-    {
-      imgSrc: TUStartup,
-      altText: 'TU Start-up',
-      title: 'Thammasat Startup Contest',
-      description: 'Advanced to the Top 12 Finalist Round in the Thammasat Startup Contest 2024.',
-    },
-    {
-      imgSrc: KeioUniversity,
-      altText: 'Google Developer Student Club',
-      title: 'International Study Trip at Keio University',
-      description: 'Joined a self-driving tech workshop, programmed in C to simulate car paths and obstacle detection.',
     },
   ];
 
