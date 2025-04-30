@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6ba270ce.css",
-    "main.js": "/portfolio/static/js/main.0d08086c.js",
+    "main.css": "/portfolio/static/css/main.a467be01.css",
+    "main.js": "/portfolio/static/js/main.a0c03e27.js",
     "static/media/Avatar.png": "/portfolio/static/media/Avatar.578d0f113f141658f397.png",
     "static/media/Inkcraft.png": "/portfolio/static/media/Inkcraft.90d5af3da62bd462add4.png",
-    "static/media/KeioUniversity.png": "/portfolio/static/media/KeioUniversity.300ad4a4dbbdabf87774.png",
     "static/media/Leadership.png": "/portfolio/static/media/Leadership.d8b56ec62784cd54bd32.png",
     "static/media/Sinno Club Member Public Relations.png": "/portfolio/static/media/Sinno Club Member Public Relations.36274d73ecae65a74ab2.png",
     "static/media/TUStartup.png": "/portfolio/static/media/TUStartup.ac481b6d22aca0e59764.png",
     "static/media/Figma101.png": "/portfolio/static/media/Figma101.df66281647c625c98e49.png",
+    "static/media/ThailandElectionDashboard.png": "/portfolio/static/media/ThailandElectionDashboard.48a84256ec6e54abd045.png",
     "static/media/SharedParty.png": "/portfolio/static/media/SharedParty.4b06de1a596624b6479b.png",
-    "static/media/CRM.png": "/portfolio/static/media/CRM.263dec13bc13ed550ef4.png",
     "static/media/CircleBackground.png": "/portfolio/static/media/CircleBackground.afff26023a01a6ad3cca.png",
+    "static/media/CRM.png": "/portfolio/static/media/CRM.aa898f38e5fa42eeb862.png",
+    "static/media/SmurfDetection.png": "/portfolio/static/media/SmurfDetection.b664a80dcf22338aa223.png",
+    "static/media/KeioUniversity.jpg": "/portfolio/static/media/KeioUniversity.384e9a94754ef3b5ff67.jpg",
     "static/media/Botnoi.png": "/portfolio/static/media/Botnoi.3d83dd768b5f8d98180a.png",
     "static/media/UXUISkill.png": "/portfolio/static/media/UXUISkill.5087bd967aeb513df7c4.png",
+    "static/media/PostgreSQL.png": "/portfolio/static/media/PostgreSQL.99d7da9230ec5e4f4c18.png",
     "static/media/TUStartupCer.png": "/portfolio/static/media/TUStartupCer.979d807532a8e8217092.png",
     "static/media/SQL.png": "/portfolio/static/media/SQL.e2b0e3d45acbb8a2ffae.png",
     "static/media/JS.png": "/portfolio/static/media/JS.dd14b37a62c5bc8719fa.png",
@@ -21,6 +24,8 @@
     "static/media/GDSC.png": "/portfolio/static/media/GDSC.c023709377d6174b7399.png",
     "static/media/EFSET.png": "/portfolio/static/media/EFSET.0f874072a4e5aa075b50.png",
     "static/media/Englishflag.png": "/portfolio/static/media/Englishflag.0bd9232dd45f447d10d9.png",
+    "static/media/UniHR.png": "/portfolio/static/media/UniHR.4a59e0708584d6c4020b.png",
+    "static/media/Redux.png": "/portfolio/static/media/Redux.4e01296bafaaea1aa902.png",
     "static/media/Chatgpt.jpg": "/portfolio/static/media/Chatgpt.7587a49039c038100aee.jpg",
     "static/media/VSCode.jpg": "/portfolio/static/media/VSCode.2b5d93c3d6c7ac1b4e1c.jpg",
     "static/media/Lineflexmessage.png": "/portfolio/static/media/Lineflexmessage.c2bb6d8ce83c99578770.png",
@@ -32,14 +37,16 @@
     "static/media/Notion.jpg": "/portfolio/static/media/Notion.29ac6427a4d4dd98c377.jpg",
     "static/media/LineOA.jpg": "/portfolio/static/media/LineOA.a4b134f7cebb261de1d0.jpg",
     "static/media/HTML.png": "/portfolio/static/media/HTML.f1292c2aa66c65689866.png",
+    "static/media/MySQL.png": "/portfolio/static/media/MySQL.4676ad983d6bd3e9fac9.png",
     "static/media/Figma.jpg": "/portfolio/static/media/Figma.261c9e9007342d331b33.jpg",
+    "static/media/RESTful.webp": "/portfolio/static/media/RESTful.ac8e13052f88387b4be1.webp",
     "static/media/BotnoiLogo.avif": "/portfolio/static/media/BotnoiLogo.72aaf95aef9bef82d8d9.avif",
     "index.html": "/portfolio/index.html",
-    "main.6ba270ce.css.map": "/portfolio/static/css/main.6ba270ce.css.map",
-    "main.0d08086c.js.map": "/portfolio/static/js/main.0d08086c.js.map"
+    "main.a467be01.css.map": "/portfolio/static/css/main.a467be01.css.map",
+    "main.a0c03e27.js.map": "/portfolio/static/js/main.a0c03e27.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ba270ce.css",
-    "static/js/main.0d08086c.js"
+    "static/css/main.a467be01.css",
+    "static/js/main.a0c03e27.js"
   ]
 }
