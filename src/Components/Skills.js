@@ -1,4 +1,5 @@
 import React from "react";
+import Git from "../Assets/SoftwareLogo/git.webp";
 import Canva from "../Assets/SoftwareLogo/Canva.jpg";
 import Figma from "../Assets/SoftwareLogo/Figma.jpg";
 import Framer from "../Assets/SoftwareLogo/Framer.png";
@@ -14,17 +15,22 @@ import JS from "../Assets/Programming/JS.png";
 import Python from "../Assets/Programming/PYTHON.png";
 import SQL from "../Assets/Programming/SQL.png";
 import REACT from "../Assets/Programming/REACT.png";
-import ExpressJS from "../Assets/Programming/ExpressJS.png"
-import MaterialUI from "../Assets/Programming/MaterialUI.jpg"
-import Redux from "../Assets/Programming/Redux.png"
-import MySQL from "../Assets/Programming/MySQL.png"
-import NodeJS from "../Assets/Programming/NodeJS.png"
-import PostgreSQL from "../Assets/Programming/PostgreSQL.png"
-import RESTful from "../Assets/Programming/RESTful.webp"
+import ExpressJS from "../Assets/Programming/ExpressJS.png";
+import MaterialUI from "../Assets/Programming/MaterialUI.jpg";
+import Bootstrap from "../Assets/Programming/Bootstrap.png"
+import Redux from "../Assets/Programming/Redux.png";
+import MySQL from "../Assets/Programming/MySQL.png";
+import NodeJS from "../Assets/Programming/NodeJS.png";
+import PostgreSQL from "../Assets/Programming/PostgreSQL.png";
+import RESTful from "../Assets/Programming/RESTful.webp";
 import UXUISkill from "../Assets/UXUISkill.png";
 
 const Skills = React.forwardRef((props, ref) => {
   const softwareSkill = [
+    {
+      software: "Git",
+      image: Git,
+    },
     {
       software: "FIGMA",
       image: Figma,
@@ -90,6 +96,10 @@ const Skills = React.forwardRef((props, ref) => {
     {
       programming: "Material UI",
       image: MaterialUI,
+    },
+    {
+      programming: "Bootstrap",
+      image: Bootstrap,
     },
     {
       programming: "REACT",

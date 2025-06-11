@@ -31,8 +31,7 @@ const Home = React.forwardRef((props, ref) => {
             <div>
               <h1 className="primary-heading">Atiluck Chanveeratham</h1>
               <p id="p-one-text">
-                A senior year Digital Engineering student at Sirindhorn International
-                Institute of Technology (SIIT), Thammasat University
+                A recently graduated Digital Engineering Student from SIIT, Thammasat University
                 <br />
                 Passionate about full-stack web development. Skilled in HTML,
                 CSS, JavaScript, and SQL, with experience in frontend and

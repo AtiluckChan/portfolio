@@ -8,11 +8,7 @@ const About = React.forwardRef((props, ref) => {
       year: "2021 - Present",
       degree: "Bachelor's in Digital Engineering (Thammasat University)",
       institution: "Sirindhorn International Institute of Technology (SIIT)",
-      gpa: "3.60",
-      detail: [
-        "Application Software Development Track",
-        "Digital Engineering Curriculum",
-      ],
+      gpa: "3.61",
     },
     {
       year: "2018 - 2021",
@@ -35,7 +31,7 @@ const About = React.forwardRef((props, ref) => {
     {
       image: EnglishFlag,
       language: "English",
-      proficiency: "EFSET Certificate C1 - Advanced",
+      proficiency: "EFSET Certificate C2 - Proficient",
     },
   ];
   return (
