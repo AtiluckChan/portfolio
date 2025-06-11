@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.53c49708.css",
-    "main.js": "/portfolio/static/js/main.2cc7c7e7.js",
+    "main.js": "/portfolio/static/js/main.ceef4cea.js",
     "static/media/Avatar.png": "/portfolio/static/media/Avatar.578d0f113f141658f397.png",
     "static/media/Leadership.png": "/portfolio/static/media/Leadership.d8b56ec62784cd54bd32.png",
     "static/media/Sinno Club Member Public Relations.png": "/portfolio/static/media/Sinno Club Member Public Relations.36274d73ecae65a74ab2.png",
@@ -45,10 +45,10 @@
     "static/media/BotnoiLogo.avif": "/portfolio/static/media/BotnoiLogo.72aaf95aef9bef82d8d9.avif",
     "index.html": "/portfolio/index.html",
     "main.53c49708.css.map": "/portfolio/static/css/main.53c49708.css.map",
-    "main.2cc7c7e7.js.map": "/portfolio/static/js/main.2cc7c7e7.js.map"
+    "main.ceef4cea.js.map": "/portfolio/static/js/main.ceef4cea.js.map"
   },
   "entrypoints": [
     "static/css/main.53c49708.css",
-    "static/js/main.2cc7c7e7.js"
+    "static/js/main.ceef4cea.js"
   ]
 }
